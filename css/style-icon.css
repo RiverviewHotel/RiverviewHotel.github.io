@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot?-pxsmpl');
+	src:url('/fonts/icomoon.eot?#iefix-pxsmpl') format('embedded-opentype'),
+		url('/fonts/icomoon.ttf?-pxsmpl') format('truetype'),
+		url('/fonts/icomoon.woff?-pxsmpl') format('woff'),
+		url('/fonts/icomoon.svg?-pxsmpl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-SchledAssoc .path1:before {
+	content: "\e600";
+	color: rgb(245, 129, 19);
+}
+.icon-SchledAssoc .path2:before {
+	content: "\e601";
+	margin-left: -1.283203125em;
+	color: rgb(77, 136, 181);
+}
+.icon-SchledAssoc .path3:before {
+	content: "\e602";
+	margin-left: -1.283203125em;
+	color: rgb(101, 169, 216);
+}
+.icon-SchledAssoc .path4:before {
+	content: "\e603";
+	margin-left: -1.283203125em;
+	color: rgb(114, 179, 141);
+}

@@ -1,0 +1,38 @@
+description: "Riverview Hotel"
+publisher: "Riverview Hotel"
+keywords: "Hotel, Pub, Murwillumbah, beer, wine, spirits, games, lunch, dinner, stylish, fun, friendly"
+title: "Riverview Hotel"
+
+biz_name: "Riverview Hotel"
+
+biz_abn: ""
+
+biz_addr_1: "267 Tweed Valley Way"
+biz_addr_2:
+biz_addr_city: "Murwillumbah"
+biz_addr_state: "NSW"
+biz_addr_code: "2484"
+
+biz_post_box:
+biz_post_city:
+biz_post_state:
+biz_post_code:
+
+biz_phone: "02 6672 1006"
+biz_fax:
+biz_email: "email@theriv.com.au"
+
+pop-img:
+
+URL: "//www.tweedriverviewhotel.com.au"
+CDN: "//cdn.tweedriverviewhotel.com.au"
+
+permalink: pretty
+
+paginate: 5
+paginate_path: "/blog/:num/"
+
+cdn: ""
+
+gems:
+  - jekyll-redirect-from
