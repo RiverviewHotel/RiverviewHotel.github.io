@@ -24,8 +24,8 @@ biz_email: "email@theriv.com.au"
 
 pop-img:
 
-URL: "//www.rvhm.com.au"
-CDN: "//cdn.rvhm.com.au"
+url: "//www.rvhm.com.au"
+cdn: "//cdn.rvhm.com.au"
 
 permalink: pretty
 
