@@ -6,30 +6,28 @@
 <meta name="description" content="{{site.description}}">
 <meta name="publisher" content="{{site.publisher}}">
 <meta name="keywords" content="{{site.keywords}}">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{site.cdn}}/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 <title>
 	{{site.title}}
 </title>
 <style>
 html {
-  background: url("//demos.creative-tim.com/coming-sssoon-pages/images/default.jpg") no-repeat center center fixed;
+  background: url('{{site.cdn}}/img/IMG_1386_bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .navbar-default { margin-bottom: 0px; }
-.navbar-brand {font-family: 'Century Gothic',CenturyGothic,AppleGothic,sans-serif;; font-weight: 400;}
+.jumbotron { color: #ffffff;  background-color: #0090d9; background-image: url('{{site.cdn}}/img/bg.png'); }
+.jumbotron p {font-family: 'Rock Salt', cursive; font-weight: 400;}
+.jumbotron img {margin: -50px 0;}
 #content p { margin: 1em; line-height: 1.6em; }
 #content p + ul { margin-top: -1em; }
-.featurette { padding-bottom: 50px; }
+.featurette { padding: 100px 0; }
+.featurette-divider {padding: 50px 0; }
 .featurette .fa { line-height: 1.3;}
-.text-primary {color: #7a8288;}
-.text-success {color: #62c462;}
-.text-danger {color: #ee5f5b;}
-.text-warning {color: #f89406;}
-.text-info {color: #5bc0de;}
 </style>
 </head>
 
@@ -39,7 +37,7 @@ html {
 
 {% include jumbotron.html %}
 
-<div id="content" class="container">
+<div id="content">
 
 {{ content }}
 
@@ -47,7 +45,7 @@ html {
 
 {% include footer.html %}
 
-<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="{{site.cdn}}/js/bootstrap.min.js"></script>
 </body>
 </html>
