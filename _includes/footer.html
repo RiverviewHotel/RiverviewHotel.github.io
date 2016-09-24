@@ -1,15 +1,15 @@
 <footer>
   <hr>
-  <div class="container">
+  <p id="map">{{site.biz_map}}</p>
+  <div class="container text-center">
     <div class="row">
-      <div id="map" class="col-md-9 col-sm-12">
-        <p>{{site.biz_map}}</p>
-      </div>
-      <div id="address" class="col-md-3 col-sm-12">
+      <div id="address" class="col-md-6">
         <p>{{site.biz_name}}</p>
         <p>{{site.biz_addr_1}}<br>
         {{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}}</p>
         <p><i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:{{site.biz_email}}">{{site.biz_email}}</a></p>
+      </div>
+      <div id="phone" class="col-md-6">
         <p><i class="fa fa-phone"></i>&nbsp;{{site.biz_phone}} Bar</p>
         <p><i class="fa fa-phone"></i>&nbsp;{{site.biz_phone_bistro}} Bistro</p>
         <p><i class="fa fa-phone"></i>&nbsp;{{site.biz_phone_bus}} Bus</p>
