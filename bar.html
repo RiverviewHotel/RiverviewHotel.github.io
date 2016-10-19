@@ -5,23 +5,6 @@ published: true
 title: "Riverview Hotel"
 subtitle: "Drink"
 lead:
-taps:
--  tap_01.png
--  tap_02.png
--  tap_03.png
--  tap_04.png
--  tap_05.jpg
--  tap_06.png
--  tap_07.png
--  tap_08.png
--  tap_09.png
--  tap_10.jpg
--  tap_11.png
--  tap_12.png
--  tap_13.png
--  tap_14.png
--  tap_15.jpg
--  tap_16.png
 
 ---
 <div class="container">
@@ -37,7 +20,7 @@ taps:
   <div class="row featurette">
 {% if page.taps %}
 {% for tap in page.taps %}
-    <div class="col-md-2 col-sm-3 col-xs-12 text-center">
+    <div class="col-lg-1 {% if forloop.index == 4 or forloop.index == 8 %}col-lg-offset-2{% endif %} col-md-2 col-sm-3 col-xs-12 text-center">
       <img src="{{site.cdn}}/img/taps/{{ tap }}" class="center-block img-responsive" alt="Beer">
     </div>
     {% if forloop.index == 6 %}<div class="clearfix visible-lg-block visible-md-block"></div>{% endif %}
@@ -46,53 +29,57 @@ taps:
     <div class="clearfix"></div>
 {% endif %}
 
-    <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="col-md-1 col-md-offset-2 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_01.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_02.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_03.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_04.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="clearfix visible-sm-block"></div>
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_05.jpg" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_06.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_07.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_08.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="clearfix"></div>
+    <div class="col-md-1 col-md-offset-2 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_09.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_10.jpg" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_11.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_12.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="clearfix visible-sm-block"></div>
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_13.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_14.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_15.jpg" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-md-1 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_16.jpg" class="center-block img-responsive" alt="Beer">
     </div>
+    <div class="clearfix"></div>
   </div>
 </div> <!-- End of content -->
