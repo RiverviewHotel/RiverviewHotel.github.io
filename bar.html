@@ -5,6 +5,24 @@ published: true
 title: "Riverview Hotel"
 subtitle: "Drink"
 lead:
+taps:
+  tap_01.png
+  tap_02.png
+  tap_03.png
+  tap_04.png
+  tap_05.jpg
+  tap_06.png
+  tap_07.png
+  tap_08.png
+  tap_09.png
+  tap_10.jpg
+  tap_11.png
+  tap_12.png
+  tap_13.png
+  tap_14.png
+  tap_15.jpg
+  tap_16.png
+
 ---
 <div class="container">
   <div class="row featurette">
@@ -16,11 +34,22 @@ lead:
       <p>There is a wide selection of local and international beers available from the bar with 16 on tap, including the locally handcrafted Stone &amp; Wood range.</p>
     </div>
   </div>
+</div>
+<div class="container-fluid">
   <div class="row featurette">
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+{% if page.taps %}
+    <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-12 text-center">
+{% for tap in page.taps %}
+      <img src="{{site.cdn}}/img/taps/{{ tap }}" class="center-block img-responsive" alt="Beer">
+{% endfor %}
+    <div class="clearfix"></div>
+    </div>
+{% endif %}
+
+    <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-12 text-center">
       <img src="{{site.cdn}}/img/taps/tap_01.png" class="center-block img-responsive" alt="Beer">
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
       <img src="{{site.cdn}}/img/taps/tap_02.png" class="center-block img-responsive" alt="Beer">
     </div>
     <div class="col-lg-3 col-md-6 col-sm-12 text-center thumbnail">
