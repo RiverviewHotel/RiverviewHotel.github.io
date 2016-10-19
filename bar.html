@@ -36,14 +36,15 @@ taps:
   </div>
 </div>
 <div class="container-fluid">
-  <div class="row featurette">
+  <div class="row featurette text-center">
 {% if page.taps %}
 {% for tap in page.taps %}
-    <div class="col-lg-2 {% if forloop.first %}col-lg-offset-2{% endif %} col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="col-lg-1 col-md-2 col-sm-6 col-xs-12 text-center">
       <img src="{{site.cdn}}/img/taps/{{ tap }}" class="center-block img-responsive" alt="Beer">
     </div>
+    {% if forloop.index = 8 %}<div class="clearfix visible-lg-block"></div>{% endif %}
+    {% if forloop.index = 4 %}<div class="clearfix visible-md-block"></div>{% endif %}
 {% endfor %}
-    <div class="clearfix"></div>
 {% endif %}
 
     <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-12 text-center">
