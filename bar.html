@@ -18,17 +18,6 @@ lead:
     </div>
   </div>
   <div class="row featurette">
-{% if page.taps %}
-{% for tap in page.taps %}
-    <div class="col-lg-1 {% if forloop.index == 4 or forloop.index == 8 %}col-lg-offset-2{% endif %} col-md-2 col-sm-3 col-xs-12 text-center">
-      <img src="{{site.cdn}}/img/taps/{{ tap }}" class="center-block img-responsive" alt="Beer">
-    </div>
-    {% if forloop.index == 6 %}<div class="clearfix visible-lg-block visible-md-block"></div>{% endif %}
-    {% if forloop.index == 4 or forloop.index == 8 %}<div class="clearfix visible-sm-block"></div>{% endif %}
-{% endfor %}
-    <div class="clearfix"></div>
-{% endif %}
-
     <div class="col-md-1 col-md-offset-2 col-sm-3 text-center">
       <img src="{{site.cdn}}/img/taps/tap_01.png" class="center-block img-responsive" alt="Beer">
     </div>
