@@ -13,9 +13,9 @@
 </title>
 <style>
 .navbar-default { margin-bottom: 0px; }
-.jumbotron { color: #ffffff;  background-color: #0090d9; background-image: url('{{site.cdn}}/img/bg.png'); }
-.jumbotron p {font-family: 'Rock Salt', cursive; font-weight: 400;}
-.jumbotron img {margin: -50px 0;}
+.header { color: #ffffff;  background-color: #0090d9; background-image: url('{{site.cdn}}/img/bg.png'); }
+.header p {font-family: 'Rock Salt', cursive; font-weight: 400;}
+.header img {margin: -50px 0;}
 #content p { margin: 1em; line-height: 1.6em; }
 #content p + ul { margin-top: -1em; }
 .featurette { padding: 100px 0; }
@@ -30,9 +30,11 @@
 
 {% include navbar.html %}
 
-{% include jumbotron.html %}
+{% include header.html %}
 
+<main id="content">
 {{ content }}
+</main>
 
 {% include footer.html %}
 
