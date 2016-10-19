@@ -39,7 +39,7 @@ taps:
   <div class="row featurette">
 {% if page.taps %}
 {% for tap in page.taps %}
-    <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-6 col-xs-12 text-center">
+    <div class="col-lg-2 {% if forloop.first %}col-lg-offset-2{% endif %} col-md-3 col-sm-6 col-xs-12 text-center">
       <img src="{{site.cdn}}/img/taps/{{ tap }}" class="center-block img-responsive" alt="Beer">
     </div>
 {% endfor %}
