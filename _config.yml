@@ -31,7 +31,7 @@ biz_abn: "72 610 964 022"
 pop-img:
 
 url: "//www.rvhm.com.au"
-cdn: "//cdn.rvhm.com.au"
+cdn: "https://cdn.rvhm.com.au"
 
 permalink: pretty
 
