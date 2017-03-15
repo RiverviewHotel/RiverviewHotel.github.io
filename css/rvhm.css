@@ -1,0 +1,9 @@
+.navbar-default { margin-bottom: 0px; }
+.styled { font-family: 'Rock Salt', cursive; font-weight: 400; }
+#content p { margin: 1em; line-height: 1.6em; }
+#content p + ul { margin-top: -1em; }
+.featurette { padding: 100px 0; }
+.featurette-divider {padding: 50px 0; }
+.icon { background-repeat: no-repeat; background-size: contain; height: 1em; width: 1em; display:inline-block; }
+.icon-phone { background-image: url('{{site.cdn}}/img/phone.svg') }
+.icon-logo { background-image: url('{{site.cdn}}/img/logo.svg') }
