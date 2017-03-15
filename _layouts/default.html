@@ -7,24 +7,23 @@
 <meta name="publisher" content="{{site.publisher}}">
 <meta name="keywords" content="{{site.keywords}}">
 <link rel="stylesheet" href="{{site.cdn}}/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/rvhm.min.css">
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet'>
 <title>
 	{{site.title}}
 </title>
-<style>
-.page-header { color: #ffffff;  background-color: #0090d9; background-image: url('{{site.cdn}}/img/bg.png'); padding: 20px 0; margin: 0; text-align: center; }
-.page-header h1 { font-family: 'Permanent Marker', cursive; color:#ffffff; font-size: 5em; }
-.page-header img { margin: -50px 0; }
-{% include rvhm.css %}
-</style>
 </head>
 
 <body>
 
-{% include navbar.html %}
+	{% include navbar.html %}
 
-{% include header.html %}
+{% if page.background %}
+	{% include jumbotron.html %}
+{% else %}
+	{% include header.html %}
+{% endif %}
 
 <main id="content">
 {{ content }}
