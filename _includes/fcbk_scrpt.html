@@ -7,15 +7,21 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<script>(function($){
-    var a = null;
-    $(window).resize(function(){
-        if(a != null) {
-            clearTimeout(a);
-        }
-
-        a = setTimeout(function(){
-            FB.XFBML.parse();
-        },1000)
-    })
-})(jQuery)</script>
+<script>$(window).resize(function() {
+   if(this.resizeTO) clearTimeout(this.resizeTO);
+   this.resizeTO = setTimeout(function() {
+      $(this).trigger('resizeEnd');
+   }, 500);
+});
+$(window).bind('resizeEnd', function() {
+   var url = $('#$WrapperID').data('refresh');
+   $('#$WrapperID').fadeOut("slow", function() {
+      $('#$WrapperID').load(url, { width: $('#$HTMLID').width() },
+      function() {
+         FB.XFBML.parse(document.getElementById('$WrapperID'),
+         function() {
+            $('#$WrapperID').fadeIn("slow");
+         });
+      })
+   });
+});</script>
