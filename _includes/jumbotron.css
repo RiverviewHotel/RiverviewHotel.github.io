@@ -5,7 +5,7 @@
   -o-background-size: cover;
   background-size: cover;
 	height:100vh;
-	color:#0f6b9f;
+	color:#eee;
 	text-align: center;
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -17,5 +17,5 @@
   top: 25%;
   transform: translateY(-25%);
 }
-.jumbotron h1 {font-family: 'Permanent Marker', cursive; text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4); }
+.jumbotron h1 {font-family: 'Permanent Marker', cursive; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
 .jumbotron p {font-family: 'Rock Salt', cursive; }

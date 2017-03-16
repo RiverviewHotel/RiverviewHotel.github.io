@@ -10,3 +10,4 @@ h1 { color:#2fa4e7; }
 .icon { background-repeat: no-repeat; background-size: contain; height: 1em; width: 1em; display:inline-block; }
 .icon-phone { background-image: url('{{site.cdn}}/img/phone.svg') }
 .icon-logo { background-image: url('{{site.cdn}}/img/logo.svg') }
+#footer div {padding-top: 20px;}
