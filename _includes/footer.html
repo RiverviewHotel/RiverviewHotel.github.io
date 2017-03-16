@@ -1,19 +1,23 @@
 <footer>
   {% include map.html %}
   <div class="container text-center">
+    <div id="facebook">
+      {% include fcbk_follow.html %}
+    </div>
+    <div id="address">
+      <p>{{site.biz_name}}</p>
+      <p>{{site.biz_addr_1}}<br>
+      {{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}}</p>
+      <p><div class="icon icon-email">&nbsp;<a href="mailto:{{site.biz_email}}">{{site.biz_email}}</a></p>
+    </div>
     <div class="row">
-      <div id="facebook" class="col-md-4">
-        {% include fcbk_follow.html %}
-      </div>
-      <div id="address" class="col-md-4">
-        <p>{{site.biz_name}}</p>
-        <p>{{site.biz_addr_1}}<br>
-        {{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}}</p>
-        <p><i class="fa fa-envelope-o"></i>&nbsp;<a href="mailto:{{site.biz_email}}">{{site.biz_email}}</a></p>
-      </div>
-      <div id="phone" class="col-md-4">
+      <div id="phone-bar" class="col-md-4 col-md-push-4">
         <p>Bar<br><div class="icon icon-phone"></div>&nbsp;{{site.biz_phone}}</p>
+      </div>
+      <div id="phone-bistro" class="col-md-4 col-md-pull-4">
         <p>Bistro<br><div class="icon icon-phone"></div>&nbsp;{{site.biz_phone_bistro}}</p>
+      </div>
+      <div id="phone-bus" class="col-md-4">
         <p>Bus<br><div class="icon icon-phone"></div>&nbsp;{{site.biz_phone_bus}}</p>
       </div>
     </div>
