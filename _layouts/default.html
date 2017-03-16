@@ -24,13 +24,9 @@
 
 <body>
 
-	{% include navbar.html %}
+{% include navbar.html %}
 
-{% if page.background %}
-	{% include jumbotron.html %}
-{% else %}
-	{% include header.html %}
-{% endif %}
+{% include header.html %}
 
 <main id="content">
 {{ content }}
@@ -40,5 +36,6 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+{% include fcbk_scrpt.html %}
 </body>
 </html>
