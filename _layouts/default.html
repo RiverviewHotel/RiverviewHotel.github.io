@@ -37,19 +37,5 @@
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script>
-(function($){
-    var a = null;
-    $(window).resize(function(){
-        if(a != null) {
-            clearTimeout(a);
-        }
-
-        a = setTimeout(function(){
-            FB.XFBML.parse(document.getElementById('fb-page'));
-        },1000)
-    })
-})(jQuery)
-</script>
 </body>
 </html>
