@@ -20,6 +20,12 @@
 {% else %}
 {% include header.css %}
 {% endif %}
+#navbar-toggle-cbox {
+  display:none
+}
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
 </style>
 </head>
 
