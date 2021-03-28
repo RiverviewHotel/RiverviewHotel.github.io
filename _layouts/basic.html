@@ -16,9 +16,13 @@
 <style>
 .marker { font-family: 'Permanent Marker', cursive; font-weight: 400; }
 .rock_salt { font-family: 'Rock Salt', cursive; font-weight: 400; }
-.text-brand {color:#2fa4e7;}
-.bg-brand {background-color:#2fa4e7;}
-.bg-pattern { background-image: url('{{site.cdn}}/img/bg.png'); }
+.text-brand {color:var(--brand-clr)}
+.text-brand-2 {color:var(--secondary-clr)}
+.text-brand-3 {color:var(--tertiary-clr)}
+.bg-brand {background-color:var(--brand-clr)}
+.bg-brand-2 { background-color:var(--secondary-clr); }
+.bg-brand-3 { background-color:var(--tertiary-clr); }
+.bg-banner { background-image: url('{{site.cdn}}/img/bg.png'); }
 #navbar-toggle-cbox {
 	display:none;
 }
@@ -31,9 +35,9 @@
 
 <body>
 
-{% include navbar5.html %}
+{% include navbar.html %}
 
-{% include header5.html %}
+{% include header.html %}
 
 <main id="content" class="container">
 {{ content }}

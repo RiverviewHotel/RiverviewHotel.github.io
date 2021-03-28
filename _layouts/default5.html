@@ -17,20 +17,22 @@
 :root{
 	--brand-clr:#2fa4e7;
 	--secondary-clr:#e7722f;
-	--tertiary-clr:#f4bfa1;
+	--tertiary-clr:#a1d6f4;
 }
 .bg-banner {
 	background: url('{{site.cdn}}{{page.background}}') center center no-repeat scroll;
 	background-size: cover;
 	height:50vh;
-	color:#eee;
-	text-align: center;
 	text-shadow: .25em .25em 2em rgba(0, 0, 0, 0.8);
 }
 .text-marker { font-family: 'Permanent Marker', cursive; font-weight: 400; }
 .text-rock_salt { font-family: 'Rock Salt', cursive; font-weight: 400; }
 .text-brand {color:var(--brand-clr)}
+.text-brand-2 {color:var(--secondary-clr)}
+.text-brand-3 {color:var(--tertiary-clr)}
 .bg-brand {background-color:var(--brand-clr)}
+.bg-brand-2 { background-color:var(--secondary-clr); }
+.bg-brand-3 { background-color:var(--tertiary-clr); }
 .bg-pattern { background-image: url('{{site.cdn}}/img/bg.png'); }
 #navbar-toggle-cbox {
 	display:none;
@@ -44,9 +46,9 @@
 
 <body>
 
-{% include navbar5.html %}
+{% include navbar.html %}
 
-{% include banner.html %}
+{% include header.html %}
 
 <main id="content" class="container my-5 py-5">
 {{ content }}
