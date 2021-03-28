@@ -1,8 +1,10 @@
 <footer class="container-fluid py-2 mt-2 text-center">
   {% include fcbk_follow.html %}
   <p class="lead">{{site.biz_name}}</p>
-  <p>{{site.biz_addr_1}}<br>
-    {{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}}
+  <p>
+    <a href="{{site.biz_map_url}}" class="text-reset text-decoration-none">
+      {{site.biz_addr_1}}<br>
+      {{site.biz_addr_city}}&nbsp;&nbsp;{{site.biz_addr_state}}&nbsp;&nbsp;{{site.biz_addr_code}} </a>
   </p>
   <p><a href="mailto:{{site.biz_email}}">{{site.biz_email}}</a></p>
   <div class="row mb-4">
