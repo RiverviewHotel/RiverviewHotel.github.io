@@ -15,12 +15,6 @@
 	{{site.title}}
 </title>
 <style>
-.bg-banner {
-	background: url('{{site.cdn}}{{page.background}}') center center no-repeat scroll;
-	background-size: cover;
-	height:50vh;
-	text-shadow: .25em .25em 2em rgba(0, 0, 0, 0.8);
-}
 .text-marker { font-family: 'Permanent Marker', cursive; font-weight: 400; }
 .text-rock_salt { font-family: 'Rock Salt', cursive; font-weight: 400; }
 .text-brand {color:var(--brand-clr)}
@@ -29,13 +23,15 @@
 .bg-brand {background-color:var(--brand-clr)}
 .bg-brand-2 { background-color:var(--secondary-clr); }
 .bg-brand-3 { background-color:var(--tertiary-clr); }
+.bg-banner {
+	background: url('{{site.cdn}}{{page.background}}') center center no-repeat scroll;
+	background-size: cover;
+	height:50vh;
+	text-shadow: .25em .25em 2em rgba(0, 0, 0, 0.8);
+}
 .bg-pattern { background-image: url('{{site.cdn}}/img/bg.png'); }
-#navbar-toggle-cbox {
-	display:none;
-}
-#navbar-toggle-cbox:checked ~ .collapse {
-	display: block;
-}
+#navbar-toggle-cbox { display:none; }
+#navbar-toggle-cbox:checked ~ .collapse { display: block; }
 </style>
 {% include tracker.html %}
 </head>
